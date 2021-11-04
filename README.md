@@ -1,10 +1,14 @@
 # Gera-PIX-QRCode-Delphi
 Função em Delphi para Gerar PIX e QR Code em Delphi
+
 Está função foi feita para uso didático e você está livre para usa-lo em seu software
 
 O Projeto foi feito em cima da Documentação do Banco Central de Padronização do Pix
 
- A Documentação de Iniciação do PIX segue a Padronização de ID + TAMANHO + VALOR
+# Documentação
+
+A Documentação de Iniciação do PIX segue a Padronização de ID + TAMANHO + VALOR
+Essas informações foram tiradas do Manual De Padroes ParaIniciacao Do Pix do Banco Central
  
  '000201' -> versão do payload QRCPS-MPM, fixo em “01”
  '010211' -> “11” (QR reutilizavel) ou “12” (QR utilizavel apenas uma vez)
@@ -24,4 +28,4 @@ O Projeto foi feito em cima da Documentação do Banco Central de Padronização
 
 # Gerador de PIX e QR Code
 
-![telainical](https://user-images.githubusercontent.com/83251822/140433123-77c16cf6-fe77-4d23-8331-ae3095ff2cd6.png)
+![telainical](https://user-images.githubusercontent.com/83251822/140433174-95465e2e-2f27-4d4f-8870-3faca7e9ffaf.png)
