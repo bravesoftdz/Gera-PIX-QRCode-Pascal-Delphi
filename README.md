@@ -1,5 +1,5 @@
-# Gera-PIX-QRCode-Delphi
-Função em Delphi para Gerar PIX e QR Code em Delphi
+# Gera-PIX-QRCode-Pascal(Delphi)
+Função em Pascal para Gerar PIX e QR Code
 
 Está função foi feita para uso didático e você está livre para usa-lo em seu software
 
