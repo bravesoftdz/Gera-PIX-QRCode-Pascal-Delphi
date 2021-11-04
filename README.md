@@ -24,4 +24,4 @@ O Projeto foi feito em cima da Documentação do Banco Central de Padronização
 
 # Gerador de PIX e QR Code
 
-![telainical](https://user-images.githubusercontent.com/83251822/140433049-ced518a1-9d90-4629-8592-76811408b219.png)
+![telainical](https://user-images.githubusercontent.com/83251822/140433123-77c16cf6-fe77-4d23-8331-ae3095ff2cd6.png)
