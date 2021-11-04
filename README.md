@@ -20,12 +20,15 @@ Essas informações foram tiradas do Manual De Padroes ParaIniciacao Do Pix do B
  
  PARA OBTER MAIS INSTRUÇÕES BAIXE O PROJETO
 
+# Gerador de PIX e QR Code
+
+![telainical](https://user-images.githubusercontent.com/83251822/140433174-95465e2e-2f27-4d4f-8870-3faca7e9ffaf.png)
+
+
 # Créditos
 
 -> ACBr e Foxit Software por disponibilizarem o gerador de QRCode DelphiZXingQRCode
 
--> Usuario renatomb do GitHub por disponibilizar codigo em PHP que serviu de grande ajuda
+-> Ao Usuario https://github.com/natanvferreira/ por me auxiliar durante o processo
 
-# Gerador de PIX e QR Code
-
-![telainical](https://user-images.githubusercontent.com/83251822/140433174-95465e2e-2f27-4d4f-8870-3faca7e9ffaf.png)
+-> Ao Usuario https://github.com/renatomb/ do GitHub por disponibilizar codigo em PHP para geração do PIX que serviu de grande ajuda
