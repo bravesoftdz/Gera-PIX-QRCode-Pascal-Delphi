@@ -21,3 +21,7 @@ O Projeto foi feito em cima da Documentação do Banco Central de Padronização
 -> ACBr e Foxit Software por disponibilizarem o gerador de QRCode DelphiZXingQRCode
 
 -> Usuario renatomb do GitHub por disponibilizar codigo em PHP que serviu de grande ajuda
+
+# Gerador de PIX e QR Code
+
+![telainical](https://user-images.githubusercontent.com/83251822/140433049-ced518a1-9d90-4629-8592-76811408b219.png)
