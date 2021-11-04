@@ -15,3 +15,8 @@ O Projeto foi feito em cima da Documentação do Banco Central de Padronização
  '0014br.gov.bcb.pix' ->  “00” (GUI) obrigatório e "14" tamanho do "br.gov.bcb.pix"
  
  PARA OBTER MAIS INSTRUÇÕES BAIXE O PROJETO
+
+# Créditos
+
+ACBr e Foxit Software por disponibilizarem o gerador de QRCode DelphiZXingQRCode
+Usuario renatomb do GitHub por disponibilizar codigo em PHP que serviu de grande ajuda
