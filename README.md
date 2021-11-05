@@ -29,6 +29,6 @@ Essas informações foram tiradas do Manual De Padroes ParaIniciacao Do Pix do B
 
 -> ACBr e Foxit Software por disponibilizarem o gerador de QRCode DelphiZXingQRCode
 
--> Ao Usuario https://github.com/natanvferreira/ por me auxiliar durante o processo
+-> Ao Usuario <a href="https://github.com/natanvferreira/">natanvferreira</a> por me auxiliar durante o processo
 
--> Ao Usuario https://github.com/renatomb/ do GitHub por disponibilizar codigo em PHP para geração do PIX que serviu de grande ajuda
+-> Ao Usuario <a href="https://github.com/renatomb/">renatomb</a> do GitHub por disponibilizar codigo em PHP para geração do PIX que serviu de grande ajuda
