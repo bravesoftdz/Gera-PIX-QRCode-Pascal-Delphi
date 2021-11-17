@@ -87,12 +87,12 @@ function TFrmGeraPix.gerapix(chavepix: String; valor: String; beneficiario: Stri
                 cidade: String; descricao: String; identificador: String): string;
 var
   linkpix: String;
-  templink: String;
+  templink, ident, tempident: String;
   TamanhoChave: Integer;
   TamanhoDesc : Integer;
   TamanhoValor: Integer;
   TamanhoBeneficiario : Integer;
-  TamanhoCidade, TamanhoTempLink: Integer;
+  TamanhoCidade, TamanhoTempLink, TamanhoIdentificador, TamanhoCompletoIdentificador: Integer;
   CRC16, desc: String;
 begin
   // Predefinido inicio  PADRAO ID + TAMANHO + VALOR
@@ -210,16 +210,37 @@ begin
     Exit;
   end;
 
-  // Additional Data Field ID: 62
-  if identificador = '' then
+  ident := StringReplace(identificador,' ','',[rfReplaceAll]);
+  TamanhoIdentificador := length(identificador); // Pegando dos dados do Cliente - IDENTIFICADOR
+  if (TamanhoIdentificador > 0) and (TamanhoIdentificador <= 20) then
   begin
-    linkpix := linkpix + '62070503' + '***';
+    if Length(IntToStr(TamanhoIdentificador)) = 1 then
+    begin
+      tempident := '05' + '0' +IntToStr(TamanhoIdentificador) + identificador;
+    end
+    else
+    begin
+      tempident := '05' + IntToStr(TamanhoIdentificador) + identificador;
+    end;
   end
   else
   begin
-    linkpix := linkpix + '62070503' +identificador;
+     tempident := '05' + '03' + '***';
   end;
 
+
+  TamanhoCompletoIdentificador := length(tempident); // Pegando dos dados do Cliente - IDENTIFICADOR
+  if (TamanhoCompletoIdentificador > 0) then
+  begin
+    if Length(IntToStr(TamanhoCompletoIdentificador)) = 1 then
+    begin
+      linkpix := linkpix + '62' + '0' +IntToStr(TamanhoCompletoIdentificador) + tempident;
+    end
+    else
+    begin
+      linkpix := linkpix + '62' + IntToStr(TamanhoCompletoIdentificador) + tempident;
+    end;
+  end;
 
   // Adicionando ID6304 ANTES PARA FORMULAR CRC16
   linkpix := linkpix + '6304';
@@ -269,9 +290,9 @@ begin
   QRCode       := TDelphiZXingQRCode.Create;
   QRCodeBitmap := TBitmap.Create;
   try
-    QRCode.Encoding  := qrUTF8NoBOM;
+   // QRCode.Encoding  := qrUTF8NoBOM;
     QRCode.QuietZone := 1;
-    QRCode.Data      := Pix;
+    QRCode.Data      := AnsiToUTF8(Trim(Pix));
 
     //QRCodeBitmap.SetSize(QRCode.Rows, QRCode.Columns);
     QRCodeBitmap.Width  := QRCode.Columns;
