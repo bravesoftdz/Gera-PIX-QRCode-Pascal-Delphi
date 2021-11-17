@@ -1,4 +1,4 @@
-# Gera-PIX-QRCode-Pascal(Delphi)
+# Gerador de PIX Estático e QR Code em Pascal(Delphi) 
 Função em Pascal para Gerar PIX e QR Code
 
 Está função foi feita para uso didático e você está livre para usa-lo em seu software
